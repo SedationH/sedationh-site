@@ -81,4 +81,4 @@ title: LeetCode
   - [逐渐进行空间优化](https://sedationh.cn/docs/LeetCode/Longest%20Valid%20Parentheses)
 - [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
   - 双指针，二分，画图分情况分析
-  - ![](http://picbed.sedationh.cn/20220413144106.png)
+  - ![](./attachments/Pasted%20image%2020220413222036.png)
