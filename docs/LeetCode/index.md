@@ -2,3 +2,83 @@
 title: LeetCode
 ---
 
+![Pasted image 20220413150912.png](./attachments/Pasted%20image%2020220413150912.png)
+
+- [ ] 预期 四五两个月 拿下 HOT 100 和相关题目
+
+  - https://leetcode-cn.com/problem-list/2cktkvj/
+
+- [1. Two Sum](https://leetcode-cn.com/problems/two-sum/)
+  - map
+  - 结尾严谨性判断
+- [2. Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/)
+  - 要考虑大数相加的情况
+    - 数组存数的顺序
+      - number -> Array 拿到的先是低位的
+    - 相加的时候是从个位开加的
+    - 考虑数组移动的花销，个位处于 0 位这样是比较友好的
+  - 简化 [989. Add to Array-Form of Integer](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)s 数组的情况
+  - 本题是链表，用了个头指针的技巧
+- [3. Longest Substring Without Repeating Characters](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
+  - 滑动窗口，模版代码了
+  - `memo map[byte]bool`
+- [4. Median of Two Sorted Arrays](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)
+
+  - 双指针 (n + m)
+  - 折半删除 log(n + m) ，觉得是更通用的解法
+
+    - 合理性证明，注意反证法，删除的合理性从其他元素的个数角度进行切入
+
+      - [参考链接](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/di-k-xiao-shu-jie-fa-ni-zhen-de-dong-ma-by-geek-8m/)
+      - ![Pasted image 20220403151056.png](./attachments/Pasted%20image%2020220403151056.png)
+      - 注意 有三个 数组情况的通用性
+
+  - 二分 log(m + n)
+    - 定一，另一个跟随变
+    - [参考](https://www.youtube.com/watch?v=q6IEA26hvXc)
+    - ![Pasted image 20220403151451.png](./attachments/Pasted%20image%2020220403151451.png)
+
+- [5. Longest Palindromic Substring](https://leetcode-cn.com/problems/longest-palindromic-substring/)
+  - 利用回文特性，从中间向两边遍历
+  - dp
+    - ![Pasted image 20220406120203.png](./attachments/Pasted%20image%2020220406120203.png)
+    - ![Pasted image 20220406123621.png](./attachments/Pasted%20image%2020220406123621.png)
+- [10. Regular Expression Matching](https://leetcode-cn.com/problems/regular-expression-matching/)
+  - 决策问题，可以自顶向下做，注意进行 cache
+  - https://www.youtube.com/watch?v=HAA8mgxlov8
+- [11. Container With Most Water](https://leetcode-cn.com/problems/container-with-most-water/)
+  - 双指针 通过理解面积计算方式，在双指针的设计下，移动一定不会删除最大值的可能，保证了算法的合理性
+  - https://leetcode-cn.com/problems/container-with-most-water/solution/container-with-most-water-shuang-zhi-zhen-fa-yi-do/
+- [15. 3Sum](https://leetcode-cn.com/problems/3sum/)
+  - 先 sort 再 双指针
+  - 注意两处去重复
+- [17. Letter Combinations of a Phone Number](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+  - dfs 形成决策树
+  - [ ] bfs 方案
+- [19. Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)
+  - 双指针
+  - dummyHead
+- [20. Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses/)
+  - map stack
+- [21. Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
+  - 双指针 dummyHead
+- [22. Generate Parentheses](https://leetcode-cn.com/problems/generate-parentheses/)
+  - dfs
+- [23. Merge k Sorted Lists](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
+  - ![Pasted image 20220409141055.png](./attachments/Pasted%20image%2020220409141055.png)
+  - ![Pasted image 20220409141111.png](./attachments/Pasted%20image%2020220409141111.png)
+  - 在 两个指针合并的基础上，两两合并
+- [31. Next Permutation](https://leetcode-cn.com/problems/next-permutation/)
+  - 先从暴力 dfs 找的逻辑看这个生成的规律
+  - 再从规律中找出下一个的规则
+    - 寻找面临下一层选择的元素
+    - 找到其下一个选择
+    - 选择完成后，基于选择后的结果拿到第一次选择的情况
+    - [详细分析见](https://sedationh.cn/docs/LeetCode/Next%20Permutation)
+- [32. Longest Valid Parentheses](https://leetcode-cn.com/problems/longest-valid-parentheses/)
+  - stack
+  - 重点思考用 stack 来做什么
+  - [逐渐进行空间优化](https://sedationh.cn/docs/LeetCode/Longest%20Valid%20Parentheses)
+- [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
+  - 双指针，二分，画图分情况分析
+  - ![](http://picbed.sedationh.cn/20220413144106.png)
