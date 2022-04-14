@@ -2,8 +2,8 @@ const fs = require("fs/promises")
 const path = require("path")
 const fixLinkFromObsidianFormat = require("./fixLinkFromObsidianFormat")
 
-const obsidianLeetCodePath = "/Users/sedationh/obsidian/SedationH/LeetCode"
-const siteLeetCodePath = path.join(__dirname, "../docs/LeetCode-1")
+const obsidianLeetCodePath = "/Users/sedationh/obsidian/SedationH/Public/LeetCode"
+const siteLeetCodePath = path.join(__dirname, "../docs/LeetCode")
 
 fs.cp(obsidianLeetCodePath, siteLeetCodePath, { recursive: true }).then(() => {
   fs.readdir(siteLeetCodePath).then((filenames) => {

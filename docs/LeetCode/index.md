@@ -28,7 +28,7 @@ title: LeetCode
 	- 折半删除 log(n + m) ，觉得是更通用的解法
 		- 合理性证明，注意反证法，删除的合理性从其他元素的个数角度进行切入
 			- [参考链接](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/solution/di-k-xiao-shu-jie-fa-ni-zhen-de-dong-ma-by-geek-8m/)
-			- ![Pasted image 20220403151056.png](./attachments/Pasted%20image%2020220403151056.png)
+			- ![Public/LeetCode/attachments/Pasted image 20220403151056.png](./attachments/Public/LeetCode/attachments/Pasted%20image%2020220403151056.png)
 			- 注意 有三个 数组情况的通用性
 	- 二分 log(m + n)
 		- 定一，另一个跟随变
@@ -70,14 +70,17 @@ title: LeetCode
 		- 寻找面临下一层选择的元素
 		- 找到其下一个选择
 		- 选择完成后，基于选择后的结果拿到第一次选择的情况
-		- [详细分析见](https://sedationh.cn/docs/LeetCode/Next%20Permutation)
+		- [[31. Next Permutation]]
 - [32. Longest Valid Parentheses](https://leetcode-cn.com/problems/longest-valid-parentheses/)
 	- stack
 	- 重点思考用 stack 来做什么
-	- [逐渐进行空间优化](https://sedationh.cn/docs/LeetCode/Longest%20Valid%20Parentheses)
+	- [[32. Longest Valid Parentheses]]
  - [33. Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
 	 - 双指针，二分，画图分情况分析
+	 - [[33. Search in Rotated Sorted Array]]
 	- ![Pasted image 20220413222036.png](./attachments/Pasted%20image%2020220413222036.png)
+- [34. Find First and Last Position of Element in Sorted Array](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+	- 二分
 - [39. Combination Sum](https://leetcode-cn.com/problems/combination-sum/)
 	- dfs 回溯
 		- 注意 goland slice 是指针的，需要利用copy
