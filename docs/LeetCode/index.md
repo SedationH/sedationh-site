@@ -9,6 +9,7 @@ title: LeetCode
 - [ ] 预期 四五两个月 拿下 HOT 100和相关题目
 	- https://leetcode-cn.com/problem-list/2cktkvj/
 	- 20% ✅ 0414
+	- 49% ✅ 0502
 
 ## HOT 100
 - [1. Two Sum](https://leetcode-cn.com/problems/two-sum/) 
