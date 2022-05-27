@@ -10,6 +10,7 @@ title: LeetCode
 	- https://leetcode-cn.com/problem-list/2cktkvj/
 	- 20% ✅ 0414
 	- 49% ✅ 0502
+	- 74% ✅ 0527
 
 ## HOT 100
 - [1. Two Sum](https://leetcode-cn.com/problems/two-sum/) 
